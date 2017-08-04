@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Site do Marcus Pereira</title>
+	<meta charset="utf-8">
 </head>
 <body>
 	<h1>Seja bem-vindo ao meu site!</h1>
@@ -10,6 +11,10 @@
 		<p>E eu sou incrível!</p>
 
 	<img src="http://i.imgur.com/ixsAXVk.jpg">
+
+
+	<!--BOLO DELÍCIA-->
+	<!--DELICOUS CAKE-->
 	
 	<h2>Bolo Delícia</h2>
 	<h3>Ingredientes</h3>
@@ -28,6 +33,10 @@
 
 	<a href="https://www.mozilla.org">Conheça a Mozilla!</a>
 	
+
+	<!--TABELA COMEÇANDO AQUI-->
+	<!--TABLE STARTING HERE-->
+
 
 		<table>
 		    <tr>
@@ -66,12 +75,85 @@
 		    </tr>
 		</table>
 
+	
+		<!--FORMULÁRIO COMEÇANDO AQUI-->
+		<!--FORM STARTING HERE-->
+
+
 	<form action="/obrigado-contato" method="post">
+
+		<!--CONTATO-->
+		<!--CONTACT-->
+
+	<fieldset>
+		<legend>Contato</legend>
 		<label>
 			Nome:
 			<input type="text" name="nome">
 		</label>
+		<br>
+		<label>
+			Mensagem:
+			<textarea name="mensagem" rows="4" cols="20"></textarea>
+		</label>
+	</fieldset>
+		
+		<!--PERGUNTAS-->
+		<!--QUESTION-->
+
+	<fieldset>
+		<legend>Perguntas</legend>
+		
+		O que você está achando deste livro até agora?
+		<br>
+		<label>
+			<input type="radio" name="qualidade" value="otimo" checked>
+		Ótimo
+		</label>
+		<label>
+			<input type="radio" name="qualidade" value="bom">
+		Bom
+		</label>
+		<label>
+			<input type="radio" name="qualidade" value="razoável">
+		Razoável
+		</label>
+
+		
+
+		<br><br>
+		Quem além de você poderia aprender HTML e CSS?
+		<br>
+		<label>
+			<input type="checkbox" name="indicado" value="mãe" checked>
+		Mãe
+		</label>
+		<label>
+			<input type="checkbox" name="indicado" value="pai">
+		Pai
+		</label>
+		<label>
+			<input type="checkbox" name="indicado" value="amigos">
+		Amigos
+		</label>
+
+
+		<br><br>
+		Como você prefere ser chamado(a)?
+		<br>
+		<select name="tratamento">
+			<option value="senhor">Senhor</option>
+			<option value="mestre">Mestre</option>
+			<option value="senhora">Senhora</option>
+			<option value="deusa" selected>Deusa</option>
+		</select>
+	</fieldset>
+		<br>
+		<input type="submit" value="Enviar formulário sem noção">
+	
+
 	</form>
+
 
 </body>
 </html>
