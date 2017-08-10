@@ -1,3 +1,11 @@
+h1 {
+	color: blue;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+}
+
 p {
 	color: red;
 }
@@ -7,9 +15,10 @@ p {
 }
 
 body {
-	color: orange;
+	color: blue;
 	text-decoration: underline;
-	height: 800px;
+	height: 500px;
+	font-family: sans-serif;
 }
 
 .absoluto {
@@ -31,4 +40,103 @@ body {
 	margin: 10px;
 	box-sizing: border-box;
 	border-radius: 3px;
+}
+
+.texto-padrao {
+	color: #333;
+	letter-spacing: 2px;
+	line-height: 2;
+	text-decoration: underline;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+}
+
+table {
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid white;
+	padding: 5px;
+	background-color: tomato;
+}
+
+.imagem-fundo {
+	background-image: url("http://i.imgur.com/UIp1qfs.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 100%;
+	padding-top: 200px;
+	text-align: center;
+}
+
+.posicao {
+	height: 100px;
+	width: 100px;
+}
+.absoluta {
+	background-color: red;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+.fixa {
+	background-color: green;
+	position: fixed;
+	top: 0;
+	left: 40px;
+	z-index: 1;
+}
+.relativa {
+	background-color: blue;
+	position: relative;
+	top: 40px;
+	left: 120px;
+}
+.estatica {
+	background-color: black;
+	position: static;
+}
+
+[type="email"] {
+	border: 1px solid red;
+}
+[name="nome"] {
+	border: 2px solid magenta;
+}
+[type] {
+	background-color: yellow;
+}
+
+h3 {
+	color: green;
+}
+.peso-2 {
+	color: blue;
+}
+#peso-3 {
+	color: magenta;
+}
+h3 {
+	color: black !important;
+}
+
+li:first-child {
+	color: blue;
+}
+li:last-child {
+	color: red;
+}
+li:nth-child(2) {
+	color: green;
+}
+li:hover {
+	font-weight: bold;
+	background-color: #aaa;
 }
