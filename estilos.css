@@ -140,3 +140,38 @@ li:hover {
 	font-weight: bold;
 	background-color: #aaa;
 }
+
+.caixa-responsiva {
+	width: 600px;
+	height: 300px;
+	border: 1px solid black;
+}
+@media screen and (max-width: 700px) {
+.caixa-responsiva {
+	width: 90%;
+	margin: 0 auto;
+	background-color: goldenrod;
+}
+}
+
+.container-flex {
+	display: flex;
+/* adicionadas medidas e cor para visualização apenas */
+	background-color: #ddd;
+	width: 300px;
+	height: 100px;
+}
+
+.container-flex {
+	display: flex;
+	flex-direction: row;
+/* adicionadas medidas e cor para visualização apenas */
+	background-color: #ddd;
+	width: 300px;
+	height: 100px;
+}
+.item {
+/* espaçamento e cor adicionados para visualização apenas */
+	padding: 10px;
+	background-color: #999;
+}
